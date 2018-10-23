@@ -1,0 +1,14 @@
+
+SELECT * FROM PROGRAMS_SCHEDULED;
+create table Programs_Scheduled(
+Schedule_Program_Id varchar2(5) primary key,
+Program_Name varchar2(15),
+Location varchar2(10),
+StartDate VARCHAR2(10),
+EndDate VARCHAR2(10),
+Sessions_Per_Week number(5));
+
+create sequence Scheduled_ID_SEQ start with 1 increment by 1;
+ DROP TABLE Programs_Scheduled;
+
+SELECT * FROM Programs_Scheduled WHERE Schedule_Program_Id =2;
